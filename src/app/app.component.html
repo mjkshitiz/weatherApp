@@ -15,57 +15,14 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="form-wrapper">
-                        <form name="searchForm" id="searchForm">
-                            <div class="input-wrapper">
-                                <input type="text" name="city" placeholder="Search" required="">
-                                <input type="submit" value="Search">
-                            </div>
-                        </form>
-                    </div>
+                    <app-form-search></app-form-search>
                 </div>
             </div>
             <div class="forecast">
                 <div class="status col-md-6 col-sm-6 col-xs-12">
-                    <ul>
-                        <li ><img class="weather-icon" src="http://openweathermap.org/img/w/10n.png">light rain
-                        </li>
-                        <li ><i class="icon-thermometer-quarter"></i>73.4° F</li>
-                        <li>
-                            <i class="icon-wind"></i><span>wind from <strong>East</strong></span>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li ><i class="icon-sun2"></i>5am</li>
-                        <li ><i class="icon-cloudy2"></i>5pm</li>
-                        <li ><i class="icon-crescent"></i>88% humidity</li>
-                    </ul>
+                <app-weather-info></app-weather-info>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="update">
-                        <span>Today forecast</span>
-                        <ul>
-                            <li >Temperture High 73.4°, Low
-                                73.4°</li>
-                            <li >Updated 16514hr 40 min ago</li>
-                        </ul>
-                    </div>
-                    <div class="forecast-detail">
-                        <ul>
-                            <li><span>Pressure</span><strong >1009</strong> in</li>
-                            <li>
-                                <span>Clouds</span><strong >light rain 75</strong> %
-                            </li>
-                            
-                            <li><span>Humidity</span><strong>88</strong> %</li>
-                        
-                            
-                            <li><span>Wind Speed</span><strong>5.82</strong> m/s</li>
-                            <li><span>Wind Degree</span><strong>240</strong>°</li>
-                            <li><span>Pressure</span><strong>1009</strong> in</li>
-                        </ul>
-                    </div>
-                </div>
+                <app-forecast-detail></app-forecast-detail>
             </div>
         </div>
     </div>
