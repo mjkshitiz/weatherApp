@@ -3,24 +3,24 @@
   <div class="update">
       <span>Today forecast</span>
       <ul>
-          <li >Temperture High 73.4°, Low
-              73.4°</li>
-          <li >Updated 16514hr 40 min ago</li>
+          <li>Temperture High {{forecastDetails.maxtemp}}°, Low
+              {{forecastDetails.mintemp}}°</li>
+          <li>Updated 16514hr 40 min ago</li>
       </ul>
   </div>
   <div class="forecast-detail">
     <ul>
-      <li><span>Pressure</span><strong >1009</strong> in</li>
+      <li><span>Pressure</span><strong >{{forecastDetails.pressure}}</strong> in</li>
       <li>
-          <span>Clouds</span><strong >light rain 75</strong> %
+          <span>Clouds</span><strong >{{forecastDetails.clouds}}</strong> %
       </li>
       
-      <li><span>Humidity</span><strong>88</strong> %</li>
+      <li><span>Humidity</span><strong>{{forecastDetails.humidity}}</strong> %</li>
     
       
-      <li><span>Wind Speed</span><strong>5.82</strong> m/s</li>
-      <li><span>Wind Degree</span><strong>240</strong>°</li>
-      <li><span>Pressure</span><strong>1009</strong> in</li>
+      <li><span>Wind Speed</span><strong>{{forecastDetails.windspeed}}</strong> m/s</li>
+      <li><span>Wind Degree</span><strong>{{forecastDetails.winddegree}}</strong>°</li>
+      <li><span>Cloud Direction</span><strong>{{forecastDetails.clouddirection}}</strong> </li>
     </ul> 
   </div>
 </div>

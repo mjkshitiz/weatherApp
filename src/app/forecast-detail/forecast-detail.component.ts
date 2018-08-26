@@ -6,8 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./forecast-detail.component.css']
 })
 export class ForecastDetailComponent implements OnInit {
-
-  constructor() { }
+forecastDetails;
+  constructor() {
+    this.forecastDetails = {
+     pressure: 2000,
+     clouds: 'light rain 7',
+     humidity: 88 ,
+     windspeed: 2.4 ,
+     winddegree: 34,
+     clouddirection: 'east',
+     maxtemp: 74,
+     mintemp: 45
+    };
+    }
 
   ngOnInit() {
   }

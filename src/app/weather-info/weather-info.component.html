@@ -1,13 +1,13 @@
 <ul>
-  <li ><img class="weather-icon" src="http://openweathermap.org/img/w/10n.png">light rain
+  <li ><img class="weather-icon" src="http://openweathermap.org/img/w/{{currenttemp.weatherIcon}}.png">{{currenttemp.weatherDescription}}
   </li>
-  <li ><i class="icon-thermometer-quarter"></i>73.4° F</li>
+  <li ><i class="icon-thermometer-quarter"></i>{{currenttemp.curtemp}}° F</li>
   <li>
-      <i class="icon-wind"></i><span>wind from <strong>East</strong></span>
+      <i class="icon-wind"></i><span>wind from <strong>{{currenttemp.windDirection}}</strong></span>
   </li>
 </ul>
 <ul>
-  <li ><i class="icon-sun2"></i>5am</li>
-  <li ><i class="icon-cloudy2"></i>5pm</li>
-  <li ><i class="icon-crescent"></i>88% humidity</li>
+  <li ><i class="icon-sun2"></i>{{currenttemp.sunrise}}</li>
+  <li ><i class="icon-cloudy2"></i>{{currenttemp.sunset}}</li>
+  <li ><i class="icon-crescent"></i>{{currenttemp.humidity}} humidity</li>
 </ul>
